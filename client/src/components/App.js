@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {Viewbar} from './shared'
 import {Home, About, Experience, Projects, Education, Contact} from './views'
 
-import './App.css';
+import './App.css'
 
 class App extends Component {
   state = {
@@ -25,6 +25,8 @@ class App extends Component {
         return <Education/>
       case "contact":
         return <Contact/>
+      default:
+        return <Home/>
     }
   }
 
