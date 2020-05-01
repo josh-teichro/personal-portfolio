@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import {Viewbar} from './shared'
-import {Home, About, Experience, Projects, Education, Contact} from './views'
+import { Viewbar, Themes } from './shared'
+import { Home, About, Experience, Projects, Education, Contact } from './views'
+import { ThemeProvider } from '@material-ui/core/styles';
 
 import './App.css'
 
@@ -34,10 +35,10 @@ class App extends Component {
     const {view} = this.state
 
     return (
-      <div className="App">
+      <ThemeProvider theme={Themes.main}>
         <Viewbar view={view} onChange={view => this.setState({view})}/>
         {this.getView()}
-      </div>
+      </ThemeProvider>
     )
   }
 }

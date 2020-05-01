@@ -1,47 +1,39 @@
 import React from 'react'
-import {AppBar, Tabs, Tab} from '@material-ui/core'
-import { withStyles } from '@material-ui/core/styles'
+import { AppBar, Tabs, Tab } from '@material-ui/core'
+import { makeStyles, useTheme } from '@material-ui/core/styles'
 
-const StyledAppBar = withStyles({
-  root: {
-    backgroundColor: 'var(--darkgrey)',
-    color: 'white',
-    height: 40,
-    boxShadow: '0 4px 0px 0px rgba(0, 0, 0, .25)',
+const useStyles = makeStyles( theme => ({
+  appbar: {
   },
-})(AppBar)
-
-const StyledTabs = withStyles({
-  root: {
-    minHeight: 40,
+  tabs: {
+      minHeight: 40,
   },
-  indicator: {
-    color: 'white',
-    backgroundColor: 'white',
-  },
-})(Tabs)
-
-const StyledTab = withStyles({
-  root: {
-    minHeight: 40,
+  tab: {
     flex: 3,
+    minHeight: 40,
+    fontWeight: 300,
+    fontSize: '0.85rem',
+    letterSpacing: '0.09em',
   },
-})(Tab)
+}))
 
-export default ({classes, view, onChange}) => {
+export default ({view, onChange}) => {
   const views = ['home', 'about', 'experience', 'projects', 'education', 'contact']
+  const theme = useTheme()
+  const classes = useStyles(theme)
 
   return (
-    <StyledAppBar position="static">
-      <StyledTabs
+    <AppBar className={classes.appbar} position="static" elevation={4}>
+      <Tabs
+        className={classes.tabs}
         value={views.indexOf(view)}
         onChange={(e, index) => onChange(views[index])}
         centered
       >
         {views.map(view =>
-          <StyledTab label={view} key={view}/>
+          <Tab className={classes.tab} label={view} key={view}/>
         )}
-      </StyledTabs>
-    </StyledAppBar>
+      </Tabs>
+    </AppBar>
   )
 }
