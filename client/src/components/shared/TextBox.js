@@ -118,7 +118,6 @@ TextBox.propTypes = {
 
 const ThemedTextBox = ({theme='main', ...other}) =>
   <ThemeProvider theme={Themes[theme]}>
-    {console.log("using theme")}
     <TextBox {...other}/>
   </ThemeProvider>
 

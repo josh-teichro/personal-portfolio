@@ -12,6 +12,7 @@ const useStyles = makeStyles( theme => ({
     padding: '5px 7px',
   },
   content: {
+    flex: '10',
     padding: 'inherit',
   },
   contentBody: {
@@ -21,6 +22,7 @@ const useStyles = makeStyles( theme => ({
     },
   },
   icon: {
+    position: 'relative',
     flex: '0 0 auto',
     width: 330,
     height: 253,
@@ -34,6 +36,14 @@ const useStyles = makeStyles( theme => ({
 
 const Icon = (({src, className, ...other}) => {
   const classes = useStyles()
+  const styles = {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+  }
   return (
     <Paper
       className={clsx(className, classes.icon)}
@@ -41,7 +51,7 @@ const Icon = (({src, className, ...other}) => {
       square
       {...other}
     >
-      <img style={{width: '100%', height: '100%'}} src={src} alt=""/>
+      <img style={styles} src={src} alt={src}/>
     </Paper>
   )
 })

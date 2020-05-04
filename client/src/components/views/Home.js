@@ -10,6 +10,7 @@ const styles = theme => ({
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
+    padding: theme.spacing(2),
   },
   content: {
     display: 'flex',
@@ -23,6 +24,7 @@ const styles = theme => ({
     margin: theme.spacing(1),
   },
   contentImage: {
+    position: 'relative',
     display: 'flex',
     flex: 'initial',
     width: 250,
@@ -41,9 +43,16 @@ const styles = theme => ({
 })
 
 const Image = withStyles(styles, { withTheme: true })(({src, classes, ignoreTop, ...other}) => {
+  const styles = {
+    width: '100%',
+    height: ignoreTop ? 300 : '100%',
+    objectFit: 'cover',
+  }
+
   return (
     <Paper
       className={clsx(classes.contentItem, classes.contentImage)}
+      square
       elevation={4}
       style={{
         height: ignoreTop ? 10 : 300,
@@ -51,7 +60,7 @@ const Image = withStyles(styles, { withTheme: true })(({src, classes, ignoreTop,
       }}
       {...other}
     >
-      <img style={{width: '100%', height: ignoreTop ? 300 : '100%'}} src={src} alt=""/>
+      <img style={styles} src={src} alt={src}/>
     </Paper>
   )
 })
@@ -63,33 +72,37 @@ class Home extends Component {
     return (
       <div className={classes.root}>
         <div className={classes.content}>
-          <Title title="Joshua Teichroeb" color="primary"/>
+          <Title title="Joshua Teichroeb" theme="themeA" color="primary"/>
           <Image src="profile-pic.jpg"/>
           <TextBox
             className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth)}
             title="About"
             body="Graduating computer science specialist at the University of Toronto, seeking a full-time time software development job in software development. Currently looking in the Toronto, Canada area, but open to opportunities elsewhere, including in the United States..."
             theme='themeA'
+            variant='A'
           />
           <TextBox
             className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth)}
             title="Experience"
             body="Most recent employment was with Magna Electronics in Brampton, ON, where he worked as a software engineering intern, but quickly became a key piece in a patent producing project..."
             theme='themeA'
+            variant='A'
           />
-          <Image src="profile-pic.jpg" ignoreTop/>
+          <Image src={require("../../images/laptop.jpg")} ignoreTop/>
           <TextBox
             className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemFullWidth)}
             title="Projects"
             body="Joshua’s projects include a variety of team and solo projects. His most recent project was creating this website, however he has also partaken in projects related to graphics, game design, and computer vision. Joshua is passionate about each one of his projects, and will always put his best foot forward to ensure that whatever he is doing becomes a success..."
             theme='themeB'
+            variant='B'
           />
-          <Image src="profile-pic.jpg"/>
+          <Image src={require("../../images/uoft_grey.jpg")}/>
           <TextBox
             className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth)}
             title="Education"
             body="Joshua just completed his post-secondary education at the University of Toronto in ON, Canada. The University of Toronto is a globally top 25 ranked university and is the largest university in Canada..."
             theme='themeA'
+            variant='A'
           />
         </div>
       </div>
