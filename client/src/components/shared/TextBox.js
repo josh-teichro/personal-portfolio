@@ -44,7 +44,8 @@ const useStyles = makeStyles( (theme) => {
     backgroundColor: 'inherit',
     color: theme.palette.primary.main,
     borderColor: theme.palette.primary.main,
-    borderStyle: 'dotted',
+    borderStyle: 'dashed',
+    borderWidth: 2,
     boxShadow: 'None',
   },
   // styles applied to the design element

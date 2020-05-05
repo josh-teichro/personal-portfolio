@@ -22,10 +22,10 @@ const Title = ({className, title, subtitle, ...other}) => {
 
   return (
       <div className={clsx(classes.root, className)}>
-      <Typography className={classes.title} variant="h4" align="left" {...other}>
+      <Typography className={classes.title} variant="h2" align="left" {...other}>
         {title}
         {subtitle &&
-          <Typography className={classes.subtitle} variant="h3" align="left" component='span' {...other}>
+          <Typography className={classes.subtitle} variant="h1" align="left" component='span' {...other}>
             {` - ${subtitle}`}
           </Typography>
         }

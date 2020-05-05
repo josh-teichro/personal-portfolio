@@ -37,23 +37,23 @@ class Themes {
       fontWeightMedium: 500,
       fontWeightBold: 700,
       h1: {
-        fontSize: 42,
+        fontSize: 36,
         fontWeight: 500,
         lineHeight: 1.2,
       },
       h2: {
-        fontSize: 42,
+        fontSize: 36,
         fontWeight: 400,
         letterSpacing: "0.00833em",
         lineHeight: 1.2,
       },
       h3: {
-        fontSize: 36,
+        fontSize: 30,
         fontWeight: 500,
         lineHeight: 1.2,
       },
       h4: {
-        fontSize: 36,
+        fontSize: 30,
         fontWeight: 400,
         letterSpacing: "0.00833em",
         lineHeight: 1.2,

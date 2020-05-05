@@ -3,6 +3,11 @@ import React from 'react'
 
 export const experience = [
   {
+    type: "header",
+    title: "Past Experiences",
+  },
+  {
+    type: "item",
     title: "Software Engineering Intern - Magna Electronics",
     subtitle: "May. 2018 - Sep. 2019 | Brampton, ON",
     body: (

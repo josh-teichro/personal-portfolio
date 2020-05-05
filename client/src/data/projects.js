@@ -4,6 +4,35 @@ import { Link } from '@material-ui/core'
 
 export const projects = [
   {
+    type: "header",
+    title: "Current Projects",
+  },
+  {
+    type: "item",
+    title: "Personal Website",
+    subtitle: "Apr. 2020",
+    body: (
+      <div>
+        <p>
+          I created this website from scratch to serve as a personal portfolio where I can demonstrate my past and current work.
+        </p>
+        <p>
+          The website was built in React and is strongly influenced by the <Link color='inherit' href="https://material-ui.com/" target="_blank" rel="noopener"> Material UI </Link> library.
+        </p>
+        <p>
+          link to repository: <Link color='inherit' href="https://github.com/josh-teichro/personal-portfolio" target="_blank" rel="noopener"> https://github.com/josh-teichro/personal-portfolio </Link>
+        </p>
+      </div>
+    ),
+    theme: 'themeA',
+    boxVariant: 'A',
+  },
+  {
+    type: "header",
+    title: "Past Projects",
+  },
+  {
+    type: "item",
     title: "A Weathery Journey (3D Video Game)",
     subtitle: "Jan. 2020 - Apr. 2020",
     body: (
@@ -18,10 +47,10 @@ export const projects = [
           One particularly interesting mechanic that I implemented from scratch is the frost mechanic that occurs when the player freezes water, turning it into ice. In order to make this work in Unity, I had to manually create a mesh at runtime whenever the player would use their frost ability near water. This mesh had to also work together with the physics system to ensure that the player could stand on top of the ice, which proved difficult because updating the physics system at runtime is very slow. My solution involved precomputing the triangles in the mesh and using a gridlike system to determine which triangles needed to be visible as well as to determine when the water was solid so that the player could walk on top of it.
         </p>
         <p style={{marginBottom: 0}}>
-          link to game: <Link color='inherit' href="https://josh-teichro.itch.io/a-weathery-journey"> https://josh-teichro.itch.io/a-weathery-journey </Link>
+          link to game: <Link color='inherit' href="https://josh-teichro.itch.io/a-weathery-journey" target="_blank" rel="noopener"> https://josh-teichro.itch.io/a-weathery-journey </Link>
         </p>
         <p style={{marginTop: 0}}>
-          link to repository: <Link color='inherit' href="https://github.com/zuhaib27/AWeatheryJourneyProject"> https://github.com/zuhaib27/AWeatheryJourneyProject </Link>
+          link to repository: <Link color='inherit' href="https://github.com/zuhaib27/AWeatheryJourneyProject" target="_blank" rel="noopener"> https://github.com/zuhaib27/AWeatheryJourneyProject </Link>
         </p>
       </div>
     ),
@@ -31,6 +60,7 @@ export const projects = [
     isIconToLeft: false
   },
   {
+    type: "item",
     title: "Blossom (University Finder Website)",
     subtitle: "Jan. 2020 - Apr. 2020",
     body: (
@@ -42,10 +72,10 @@ export const projects = [
           The project was built using a React frontend and a javascript (node.js) backend. This website was a course project built by 4 students, but has been deployed using heroku and holds valid data.
         </p>
         <p style={{marginBottom: 0}}>
-          visit wesite: <Link color='inherit' href="https://blossom-309.herokuapp.com"> https://blossom-309.herokuapp.com </Link>
+          visit wesite: <Link color='inherit' href="https://blossom-309.herokuapp.com" target="_blank" rel="noopener"> https://blossom-309.herokuapp.com </Link>
         </p>
         <p style={{marginTop: 0}}>
-          link to repository: <Link color='inherit' href="https://github.com/josh-teichro/blossom"> https://github.com/josh-teichro/blossom </Link>
+          link to repository: <Link color='inherit' href="https://github.com/josh-teichro/blossom" target="_blank" rel="noopener"> https://github.com/josh-teichro/blossom </Link>
         </p>
       </div>
     ),
@@ -55,6 +85,7 @@ export const projects = [
     isIconToLeft: true
   },
   {
+    type: "item",
     title: "Graphics Raycaster (Image Rendering Competition)",
     subtitle: "Jan. 2020 - Apr. 2020",
     body: (
@@ -79,6 +110,7 @@ export const projects = [
     isIconToLeft: true
   },
   {
+    type: "item",
     title: "Animated Symbol Detection (Computer Vision Project)",
     subtitle: "Nov. 2019 - Dec. 2019",
     body: (
@@ -90,10 +122,10 @@ export const projects = [
           The symbols that I was required to detect were located in various positions relative to any particular character’s face, could be rotated to various degrees, and could be scaled to different sizes depending on how near the character was to the virtual camera. All of these factors, along with the fact that any symbol looked different from one frame to the next (due to the images being animated drawings), were the key difficulties in this project. To solve the problem, I considered using both a SIFT based method as well as a variant of the Generalized Hough Transform by D. H. Balard. Of these, the method based on the Generalized Hough Transform proved the most successful.
         </p>
         <p>
-          You can read my paper which describes the algorithms I used <Link color='inherit' href="https://github.com/josh-teichro/my-reports/blob/master/NarutoCharacterRecognitionAndAnalysis.pdf"> here </Link>.
+          You can read my paper which describes the algorithms I used <Link color='inherit' href="https://github.com/josh-teichro/my-reports/blob/master/NarutoCharacterRecognitionAndAnalysis.pdf" target="_blank" rel="noopener"> here </Link>.
         </p>
         <p>
-          link to repository: <Link color='inherit' href="https://github.com/jaruserickson/naruto-cv"> https://github.com/jaruserickson/naruto-cv </Link>
+          link to repository: <Link color='inherit' href="https://github.com/jaruserickson/naruto-cv" target="_blank" rel="noopener"> https://github.com/jaruserickson/naruto-cv </Link>
         </p>
       </div>
     ),
