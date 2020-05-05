@@ -17,7 +17,7 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'space-between',
     flexWrap: 'wrap',
-    width: 932, //1177,
+    width: 1024, //932, //1177,
   },
   contentLeft: {
     display: 'flex',
@@ -124,10 +124,10 @@ class About extends Component {
               title="Skills"
               body=
               <div className={classes.contentSkillsBox}>
-                {about.skills.cols.map((col) => (
-                      <ul className={classes.contentSkillsBoxColumn} style={{width: `${100 / about.skills.cols.length}%` }}>
-                        {col.map((skill, i) => (
-                          <li key={i}> {skill} </li>
+                {about.skills.cols.map((col, i) => (
+                      <ul key={i} className={classes.contentSkillsBoxColumn} style={{width: `${100 / about.skills.cols.length}%` }}>
+                        {col.map((skill, j) => (
+                          <li key={j}> {skill} </li>
                         ))}
                       </ul>
                   ))}

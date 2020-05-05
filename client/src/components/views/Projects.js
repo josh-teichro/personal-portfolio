@@ -39,8 +39,8 @@ class Projects extends Component {
                 body={project.body}
                 theme={project.theme}
                 variant={project.boxVariant}
-                leftIcon={project.isIconToLeft ? this.getImagePath(project.icon) : ""}
-                rightIcon={!project.isIconToLeft ? this.getImagePath(project.icon) : ""}
+                icon={this.getImagePath(project.icon)}
+                isIconToLeft={project.isIconToLeft}
                 key={project.title}
               />
             ))}

@@ -5,15 +5,10 @@ import { makeStyles, useTheme } from '@material-ui/core/styles'
 
 const useStyles = makeStyles( theme => ({
   root: {
-    display: 'flex',
-    flexWrap: 'no-wrap',
-    justifyContent: 'center',
     textAlign: 'left',
-    padding: '5px 7px',
   },
   content: {
-    flex: '10',
-    padding: 'inherit',
+    margin: "12px 15px",
   },
   contentBody: {
     margin: '4px 0px',
@@ -26,11 +21,13 @@ const useStyles = makeStyles( theme => ({
     flex: '0 0 auto',
     width: 330,
     height: 253,
-    margin: '28px 27px',
+    margin: '22px 18px',
   },
   leftIcon: {
+    float: 'left',
   },
   rightIcon: {
+    float: 'right',
   },
 }))
 
@@ -56,21 +53,21 @@ const Icon = (({src, className, ...other}) => {
   )
 })
 
-const TextBoxBase = ({children, className, title, subtitle, body, leftIcon, rightIcon, ...other}) => {
+const TextBoxBase = ({children, className, title, subtitle, body, icon, isIconToLeft, ...other}) => {
   const theme = useTheme()
   const classes = useStyles(theme)
 
   return (
     <Paper className={clsx(classes.root, className)} {...other}>
-      {leftIcon &&
-        <Icon className={classes.leftIcon} src={leftIcon}/>
-      }
       <div className={classes.content}>
-        <Typography variant="h5">
+        {icon &&
+          <Icon className={ isIconToLeft ? classes.leftIcon : classes.rightIcon} src={icon}/>
+        }
+        <Typography variant="h5" component="p">
           {title}
         </Typography>
         {subtitle &&
-          <Typography variant="subtitle2">
+          <Typography variant="subtitle2" component="p">
             {subtitle}
           </Typography>
         }
@@ -78,9 +75,6 @@ const TextBoxBase = ({children, className, title, subtitle, body, leftIcon, righ
           {body}
         </Typography>
       </div>
-      {rightIcon &&
-        <Icon className={classes.rightIcon} src={rightIcon}/>
-      }
       {children}
     </Paper>
   )

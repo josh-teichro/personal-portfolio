@@ -72,8 +72,8 @@ const TextBox = (props) => {
     title,
     subtitle,
     body,
-    leftIcon,
-    rightIcon,
+    icon,
+    isIconToLeft,
     ...other
   } = props
 
@@ -86,8 +86,8 @@ const TextBox = (props) => {
         classes[`variant${variant}`],
         className,
       )}
-      leftIcon={leftIcon}
-      rightIcon={rightIcon}
+      icon={icon}
+      isIconToLeft={isIconToLeft}
       title={title}
       subtitle={subtitle}
       body={body}

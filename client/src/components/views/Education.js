@@ -41,6 +41,7 @@ class Education extends Component {
                 theme={item.theme}
                 variant={item.boxVariant}
                 key={item.title}
+                component="div"
               />
             ))}
         </div>
