@@ -1,5 +1,6 @@
 // projects list
 import React from 'react'
+import { Link } from '@material-ui/core'
 
 export const projects = [
   {
@@ -17,10 +18,10 @@ export const projects = [
           One particularly interesting mechanic that I implemented from scratch is the frost mechanic that occurs when the player freezes water, turning it into ice. In order to make this work in Unity, I had to manually create a mesh at runtime whenever the player would use their frost ability near water. This mesh had to also work together with the physics system to ensure that the player could stand on top of the ice, which proved difficult because updating the physics system at runtime is very slow. My solution involved precomputing the triangles in the mesh and using a gridlike system to determine which triangles needed to be visible as well as to determine when the water was solid so that the player could walk on top of it.
         </p>
         <p style={{marginBottom: 0}}>
-          link to game: https://josh-teichro.itch.io/a-weathery-journey
+          link to game: <Link color='inherit' href="https://josh-teichro.itch.io/a-weathery-journey"> https://josh-teichro.itch.io/a-weathery-journey </Link>
         </p>
         <p style={{marginTop: 0}}>
-          link to repository: https://github.com/zuhaib27/AWeatheryJourneyProject
+          link to repository: <Link color='inherit' href="https://github.com/zuhaib27/AWeatheryJourneyProject"> https://github.com/zuhaib27/AWeatheryJourneyProject </Link>
         </p>
       </div>
     ),
@@ -41,10 +42,10 @@ export const projects = [
           The project was built using a React frontend and a javascript (node.js) backend. This website was a course project built by 4 students, but has been deployed using heroku and holds valid data.
         </p>
         <p style={{marginBottom: 0}}>
-          visit wesite: https://blossom-309.herokuapp.com
+          visit wesite: <Link color='inherit' href="https://blossom-309.herokuapp.com"> https://blossom-309.herokuapp.com </Link>
         </p>
         <p style={{marginTop: 0}}>
-          link to repository: https://github.com/josh-teichro/blossom
+          link to repository: <Link color='inherit' href="https://github.com/josh-teichro/blossom"> https://github.com/josh-teichro/blossom </Link>
         </p>
       </div>
     ),
@@ -89,10 +90,10 @@ export const projects = [
           The symbols that I was required to detect were located in various positions relative to any particular character’s face, could be rotated to various degrees, and could be scaled to different sizes depending on how near the character was to the virtual camera. All of these factors, along with the fact that any symbol looked different from one frame to the next (due to the images being animated drawings), were the key difficulties in this project. To solve the problem, I considered using both a SIFT based method as well as a variant of the Generalized Hough Transform by D. H. Balard. Of these, the method based on the Generalized Hough Transform proved the most successful.
         </p>
         <p>
-          You can read my paper which describes the algorithms I used here.
+          You can read my paper which describes the algorithms I used <Link color='inherit' href="https://github.com/josh-teichro/my-reports/blob/master/NarutoCharacterRecognitionAndAnalysis.pdf"> here </Link>.
         </p>
         <p>
-          link to repository: https://github.com/jaruserickson/naruto-cv
+          link to repository: <Link color='inherit' href="https://github.com/jaruserickson/naruto-cv"> https://github.com/jaruserickson/naruto-cv </Link>
         </p>
       </div>
     ),

@@ -32,7 +32,13 @@ const styles = theme => ({
   },
   contentTextBox: {
     flex: '10 1 auto',
-    height: 208,
+	    height: 208,
+	},
+	contentLink: {
+    '&:hover': {
+			cursor: 'pointer',
+			opacity: '80%',
+    }
   },
   contentItemFullWidth: {
     width: '100%',
@@ -67,7 +73,7 @@ const Image = withStyles(styles, { withTheme: true })(({src, classes, ignoreTop,
 
 class Home extends Component {
   render() {
-    const { classes } = this.props
+    const { classes, goToView } = this.props
 
     return (
       <div className={classes.root}>
@@ -75,34 +81,38 @@ class Home extends Component {
           <Title title="Joshua Teichroeb" theme="themeA" color="primary"/>
           <Image src="profile-pic.jpg"/>
           <TextBox
-            className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth)}
+            className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth, classes.contentLink)}
             title="About"
             body="Graduating computer science specialist at the University of Toronto, seeking a full-time time job in software development. Currently looking in the Toronto, Canada area, but open to opportunities elsewhere, including in the United States..."
             theme='themeA'
             variant='A'
+            onClick={() => goToView("about")}
           />
           <TextBox
-            className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth)}
+            className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth, classes.contentLink)}
             title="Experience"
             body="Most recent employment was with Magna Electronics in Brampton, ON, where he worked as a software engineering intern, but quickly became a key piece in a patent producing project..."
             theme='themeA'
             variant='A'
+            onClick={() => goToView("experience")}
           />
           <Image src={require("../../images/laptop.jpg")} ignoreTop/>
           <TextBox
-            className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemFullWidth)}
+            className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemFullWidth, classes.contentLink)}
             title="Projects"
             body="Joshua’s projects include a variety of team and solo projects. His most recent project was creating this website, however he has also partaken in projects related to graphics, game design, and computer vision. Joshua is passionate about each one of his projects, and will always put his best foot forward to ensure that whatever he is doing becomes a success..."
             theme='themeB'
             variant='B'
+            onClick={() => goToView("projects")}
           />
           <Image src={require("../../images/uoft_grey.jpg")}/>
           <TextBox
-            className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth)}
+            className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth, classes.contentLink)}
             title="Education"
             body="Joshua just completed his post-secondary education at the University of Toronto in ON, Canada. The University of Toronto is a globally top 25 ranked university and is the largest university in Canada..."
             theme='themeA'
             variant='A'
+            onClick={() => goToView("education")}
           />
           <ContactInfo className={clsx(classes.contentItem, classes.contentTextBox)}/>
         </div>

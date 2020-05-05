@@ -12,7 +12,7 @@ const useStyles = makeStyles( theme => ({
   },
   contentBody: {
     margin: '4px 0px',
-    '& p' : {
+    '& p': {
       margin: '16px 0px',
     },
   },

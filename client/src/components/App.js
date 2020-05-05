@@ -15,20 +15,28 @@ class App extends Component {
 
     switch(view) {
       case "home":
-        return <Home/>
+        return <Home goToView={this.setView}/>
       case "about":
-        return <About/>
+        return <About goToView={this.setView}/>
       case "experience":
-        return <Experience/>
+        return <Experience goToView={this.setView}/>
       case "projects":
-        return <Projects/>
+        return <Projects goToView={this.setView}/>
       case "education":
-        return <Education/>
+        return <Education goToView={this.setView}/>
       case "contact":
-        return <Contact/>
+        return <Contact goToView={this.setView}/>
       default:
-        return <Home/>
+        return <Home goToView={this.setView}/>
     }
+  }
+
+  setView = (view) => {
+    this.setState({view})
+    window.scrollTo({
+      top: 0,
+      //behavior: "smooth"
+    });
   }
 
   render() {
@@ -36,7 +44,7 @@ class App extends Component {
 
     return (
       <ThemeProvider theme={Themes.main}>
-        <Viewbar view={view} onChange={view => this.setState({view})}/>
+        <Viewbar view={view} onChange={this.setView}/>
         {this.getView()}
       </ThemeProvider>
     )
