@@ -38,61 +38,61 @@ class Themes {
       fontWeightBold: 700,
       h1: {
         fontSize: 42,
-        fontWeight: 400,
+        fontWeight: 500,
         lineHeight: 1.2,
       },
       h2: {
         fontSize: 42,
-        fontWeight: 300,
+        fontWeight: 400,
         letterSpacing: "0.00833em",
         lineHeight: 1.2,
       },
       h3: {
         fontSize: 36,
-        fontWeight: 400,
+        fontWeight: 500,
         lineHeight: 1.2,
       },
       h4: {
         fontSize: 36,
-        fontWeight: 300,
+        fontWeight: 400,
         letterSpacing: "0.00833em",
         lineHeight: 1.2,
       },
       h5: {
         fontSize: 24,
-        fontWeight: 400,
+        fontWeight: 500,
         lineHeight: 1.2,
       },
       h6: {
         fontSize: 24,
-        fontWeight: 300,
+        fontWeight: 400,
         letterSpacing: "0.00833em",
         lineHeight: 1.2,
       },
       subtitle1: {
         fontSize: 18,
-        fontWeight: 400,
+        fontWeight: 500,
         lineHeight: 1.3,
       },
       subtitle2: {
         fontSize: 18,
-        fontWeight: 300,
+        fontWeight: 400,
         letterSpacing: "0.00833em",
         lineHeight: 1.3,
       },
       body1: {
         fontSize: 14,
-        fontWeight: 400,
+        fontWeight: 500,
         lineHeight: 1.4,
       },
       body2: {
         fontSize: 14,
-        fontWeight: 300,
+        fontWeight: 400,
         letterSpacing: "0.00833em",
         lineHeight: 1.4,
       },
     },
-    spacing: 8,
+    spacing: [8, 12, 16, 20, 24],
   })
 
   static themeA = createMuiTheme({
@@ -100,6 +100,7 @@ class Themes {
     palette: {
       primary: {
         main: this.rosedust,
+        //contrastText: this.lightgrey,
       },
       secondary: {
         main: this.lightgrey,

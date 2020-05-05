@@ -7,9 +7,13 @@ import { makeStyles, ThemeProvider } from '@material-ui/core/styles'
 const useStyles = makeStyles( theme => ({
   root: {
     width: 'inherit',
-    margin: theme.spacing(1),
+    margin: theme.spacing(0),
   },
-  typography: {
+  title: {
+    fontWeight: theme.typography.fontWeightLight,
+  },
+  subtitle: {
+    fontWeight: theme.typography.fontWeightRegular,
   }
 }))
 
@@ -18,10 +22,10 @@ const Title = ({className, title, subtitle, ...other}) => {
 
   return (
       <div className={clsx(classes.root, className)}>
-      <Typography className={classes.typography} variant="h4" align="left" {...other}>
+      <Typography className={classes.title} variant="h4" align="left" {...other}>
         {title}
         {subtitle &&
-          <Typography className={classes.typography} variant="h3" align="left" component='span' {...other}>
+          <Typography className={classes.subtitle} variant="h3" align="left" component='span' {...other}>
             {` - ${subtitle}`}
           </Typography>
         }

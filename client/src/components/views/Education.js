@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { TextBox, Title } from '../shared'
+import { TextBox, Title, ContactInfo } from '../shared'
 import { education } from '../../data/education'
 import { withStyles } from '@material-ui/core/styles'
 
@@ -9,14 +9,13 @@ const styles = (theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
-    padding: theme.spacing(2),
+    padding: theme.spacing(1),
   },
   content: {
     display: 'flex',
     justifyContent: 'center',
     flexWrap: 'wrap',
     width: 932, //1177,
-    margin: -theme.spacing(1),
   },
   contentItem: {
     margin: theme.spacing(1),
@@ -44,6 +43,7 @@ class Education extends Component {
                 component="div"
               />
             ))}
+            <ContactInfo className={classes.contentItem}/>
         </div>
       </div>
     )

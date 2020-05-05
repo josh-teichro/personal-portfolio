@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import clsx from 'clsx'
-import { TextBox, Title } from '../shared'
+import { TextBox, Title, ContactInfo } from '../shared'
 import { about } from '../../data/about'
 import { Paper } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
@@ -21,19 +21,17 @@ const styles = theme => ({
   },
   contentLeft: {
     display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+    //alignItems: 'flex-start',
     flexWrap: 'wrap',
     width: '30%',
-    //margin: -theme.spacing(1),
   },
   contentRight: {
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
     alignItems: 'flex-start',
     flexWrap: 'wrap',
     width: '70%',
-    //margin: -theme.spacing(1),
   },
   contentItem: {
     margin: theme.spacing(1),
@@ -42,7 +40,7 @@ const styles = theme => ({
     position: 'relative',
     flex: 'initial',
     width: '100%',
-    paddingTop: '128%', // aspect ratio
+    paddingTop: '50%', // aspect ratio
   },
   contentTextBox: {
     flex: '10 1 auto',
@@ -97,6 +95,7 @@ class About extends Component {
           <Title title="Joshua Teichroeb" subtitle="About" color="primary"/>
           <div className={classes.contentLeft}>
             <Image src="profile-pic.jpg"/>
+            <ContactInfo className={clsx(classes.contentItem, classes.contentTextBox)}/>
           </div>
           <div className={classes.contentRight}>
             <TextBox

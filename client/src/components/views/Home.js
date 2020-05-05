@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import clsx from 'clsx'
-import { TextBox, Title } from '../shared'
+import { TextBox, Title, ContactInfo } from '../shared'
 import { Paper } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 
@@ -18,10 +18,10 @@ const styles = theme => ({
     alignItems: 'flex-start',
     flexWrap: 'wrap',
     width: 782,
-    margin: -theme.spacing(1),
+    margin: -theme.spacing(0),
   },
   contentItem: {
-    margin: theme.spacing(1),
+    margin: theme.spacing(0),
   },
   contentImage: {
     position: 'relative',
@@ -77,7 +77,7 @@ class Home extends Component {
           <TextBox
             className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth)}
             title="About"
-            body="Graduating computer science specialist at the University of Toronto, seeking a full-time time software development job in software development. Currently looking in the Toronto, Canada area, but open to opportunities elsewhere, including in the United States..."
+            body="Graduating computer science specialist at the University of Toronto, seeking a full-time time job in software development. Currently looking in the Toronto, Canada area, but open to opportunities elsewhere, including in the United States..."
             theme='themeA'
             variant='A'
           />
@@ -104,6 +104,7 @@ class Home extends Component {
             theme='themeA'
             variant='A'
           />
+          <ContactInfo className={clsx(classes.contentItem, classes.contentTextBox)}/>
         </div>
       </div>
     )
