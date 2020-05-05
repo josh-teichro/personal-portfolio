@@ -16,6 +16,7 @@ const styles = {
 
 export const education = [
   {
+    type: 'item',
     title: "University of Toronto - Honours Bachelor of Science",
     subtitle: "Sep. 2015 - Jun. 2020 | Toronto, ON | Cum. GPA: 3.68/4.00",
     body: (
@@ -61,6 +62,7 @@ export const education = [
     boxVariant: 'A',
   },
   {
+    type: 'item',
     title: "Accelerated Christian Education - Manitoba High School Academic Diploma",
     subtitle: "Sep. 2012 - Aug. 2015 | Portage La Prairie | Avg. Ann. 98.5%",
     body: (
