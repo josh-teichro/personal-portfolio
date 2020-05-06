@@ -22,12 +22,18 @@ export default ({view, onChange}) => {
   const theme = useTheme()
   const classes = useStyles(theme)
 
+	const goToView = (view) => {
+		if (window.location !== "/"+view ) {
+			window.location = "/"+view
+		}
+	}
+
   return (
     <AppBar className={classes.appbar} position="static" elevation={4}>
       <Tabs
         className={classes.tabs}
         value={views.indexOf(view)}
-        onChange={(e, index) => onChange(views[index])}
+        onChange={(e, index) => goToView(views[index])}
         centered
       >
         {views.map(view =>

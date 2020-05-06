@@ -15,7 +15,7 @@ const styles = (theme) => ({
 
 class Experience extends Component {
   render() {
-    const {classes} = this.props
+    const { classes } = this.props
 
     return (
       <div className={classes.root}>

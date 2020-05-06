@@ -73,7 +73,7 @@ const Image = withStyles(styles, { withTheme: true })(({src, classes, ignoreTop,
 
 class Home extends Component {
   render() {
-    const { classes, goToView } = this.props
+    const { classes } = this.props
 
     return (
       <div className={classes.root}>
@@ -86,7 +86,7 @@ class Home extends Component {
             body="Graduating computer science specialist at the University of Toronto, seeking a full-time time job in software development. Currently looking in the Toronto, Canada area, but open to opportunities elsewhere, including in the United States..."
             theme='themeA'
             variant='A'
-            onClick={() => goToView("about")}
+            onClick={() => this.goToView("about")}
           />
           <TextBox
             className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth, classes.contentLink)}
@@ -94,7 +94,7 @@ class Home extends Component {
             body="Most recent employment was with Magna Electronics in Brampton, ON, where he worked as a software engineering intern, but quickly became a key piece in a patent producing project..."
             theme='themeA'
             variant='A'
-            onClick={() => goToView("experience")}
+            onClick={() => this.goToView("experience")}
           />
           <Image src={require("../../images/laptop.jpg")} ignoreTop/>
           <TextBox
@@ -103,7 +103,7 @@ class Home extends Component {
             body="Joshua’s projects include a variety of team and solo projects. His most recent project was creating this website, however he has also partaken in projects related to graphics, game design, and computer vision. Joshua is passionate about each one of his projects, and will always put his best foot forward to ensure that whatever he is doing becomes a success..."
             theme='themeB'
             variant='B'
-            onClick={() => goToView("projects")}
+            onClick={() => this.goToView("projects")}
           />
           <Image src={require("../../images/uoft_grey.jpg")}/>
           <TextBox
@@ -112,13 +112,17 @@ class Home extends Component {
             body="Joshua just completed his post-secondary education at the University of Toronto in ON, Canada. The University of Toronto is a globally top 25 ranked university and is the largest university in Canada..."
             theme='themeA'
             variant='A'
-            onClick={() => goToView("education")}
+            onClick={() => this.goToView("education")}
           />
           <ContactInfo className={clsx(classes.contentItem, classes.contentTextBox)}/>
         </div>
       </div>
     )
   }
+
+	goToView = (view) => {
+		window.location = "/"+view
+	}
 }
 
 export default withStyles(styles, { withTheme: true })(Home)

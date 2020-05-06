@@ -18,7 +18,7 @@ export const education = [
   {
     type: 'item',
     title: "University of Toronto - Honours Bachelor of Science",
-    subtitle: "Sep. 2015 - Jun. 2020 | Toronto, ON | Cum. GPA: 3.68/4.00",
+    subtitle: "Sep. 2015 - Jun. 2020 | Toronto, ON | Cum. GPA: 3.73/4.00",
     body: (
       <div>
         <p>
@@ -30,8 +30,7 @@ export const education = [
         <ul style={{marginTop: 2}}>
           <li> University of Toronto Scholar (entrance scholarship worth $6000) </li>
           <li> Winter 2018 Dean’s List Scholar </li>
-          <li> 3.97 annual GPA during 3rd year (with full course load) </li>
-          <li> 3.75 GPA thus far in 4th year (1 semester) </li>
+          <li> 3.97 and 3.89 annual GPA during 3rd and 4th year respectively (full course load each year) </li>
         </ul>
         <p style={{marginBottom: 2}}>
           Extra-Curricular:
@@ -48,11 +47,11 @@ export const education = [
         </p>
         <div style={{...styles.grid, marginTop: 2, marginLeft: 40}}>
           <div style={styles.gridItem}> English (1.5) </div>
+          <div style={styles.gridItem}> Philosophy (2.0) </div>
           <div style={styles.gridItem}> Math (2.5) </div>
+          <div style={styles.gridItem}> Statistics (0.5) </div>
           <div style={styles.gridItem}> Algorithms & Programming (7.0) </div>
           <div style={styles.gridItem}> Computer Vision, Machine Learning, & AI (3.0) </div>
-          <div style={styles.gridItem}> Philosophy (2.0) </div>
-          <div style={styles.gridItem}> Statistics (0.5) </div>
           <div style={styles.gridItem}> UI & Web Development (2.0) </div>
           <div style={styles.gridItem}> Graphics & Game Design (1.5) </div>
         </div>

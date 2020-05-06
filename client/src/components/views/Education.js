@@ -15,7 +15,7 @@ const styles = (theme) => ({
 
 class Education extends Component {
   render() {
-    const {classes} = this.props
+    const { classes } = this.props
 
     return (
       <div className={classes.root}>
