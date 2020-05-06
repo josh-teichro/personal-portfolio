@@ -13,7 +13,11 @@ class App extends Component {
       <BrowserRouter>
         <ThemeProvider theme={Themes.main}>
           <Switch>
-            <Route exact strict path={["/", "/home"]}>
+            <Route exact strict path={"/"}>
+              <Viewbar view={"home"}/>
+              <Home splash/>
+            </Route>
+            <Route exact strict path={"/home"}>
               <Viewbar view={"home"}/>
               <Home/>
             </Route>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import clsx from 'clsx'
-import { TextBox, Title, ContactInfo } from '../shared'
-import { Paper } from '@material-ui/core'
+import { Splash, TextBox, Title, ContactInfo } from '../shared'
+import { Paper, Typography } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 
 const styles = theme => ({
@@ -72,13 +72,20 @@ const Image = withStyles(styles, { withTheme: true })(({src, classes, ignoreTop,
 })
 
 class Home extends Component {
+	state = {
+		splashVisible: this.props.splash
+	}
+
   render() {
     const { classes } = this.props
 
     return (
       <div className={classes.root}>
+				<Splash visible={this.state.splashVisible}>
+					Welcome to My Portfolio!
+				</Splash>
         <div className={classes.content}>
-          <Title title="Joshua Teichroeb" theme="themeA" color="primary"/>
+          <Title title="Joshua Teichroeb" color="primary"/>
           <Image src="profile-pic.jpg"/>
           <TextBox
             className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth, classes.contentLink)}

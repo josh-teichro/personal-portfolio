@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import clsx from 'clsx'
 import { TextBox, Title, ContactInfo } from '../shared'
-import { projects } from '../../data/projects'
 import { Typography } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 
@@ -41,10 +40,10 @@ class ListView extends Component {
     return (
       <div className={classes.content}>
         <Title title={title} subtitle={subtitle} color="primary"/>
-        {items.map((item) => {
+        {items.map((item, i) => {
           if (item.type === 'header') {
             return (
-              <Header className={classes.contentItem}>
+              <Header key={i} className={classes.contentItem}>
                 {item.title}
               </Header>
             )
@@ -60,7 +59,7 @@ class ListView extends Component {
                 variant={item.boxVariant}
                 icon={item.icon && this.getImagePath(item.icon)}
                 isIconToLeft={item.isIconToLeft}
-                key={item.title}
+                key={i}
               />
             )
           }
