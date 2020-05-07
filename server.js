@@ -10,7 +10,7 @@ const app = express();
 const bodyParser = require('body-parser')
 app.use(bodyParser.json())
 
-app.use(express.static('client/build'));
+app.use(express.static(__dirname + '/client/build'));
 
 const path = require('path');
 app.get('*', (req,res) => {
