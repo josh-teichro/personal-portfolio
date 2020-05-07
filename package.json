@@ -1,32 +1,23 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "proxy": "http://localhost:5000",
+  "version": "1.0.0",
+  "description": "Joshua Teichroeb - Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "npm install && cd client && npm install && cd ..",
+    "client": "npm run start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
   "dependencies": {
     "express": "^4.17.1"
   },
-  "scripts": {
-    "setup": "npm install && cd client && npm install && cd ..",
-    "build-run": "cd client && npm run build && cd .. && node server.js",
-    "start": "node server.js",
-    "start-dev": "nodemon server.js",
-    "heroku-postbuild": "cd client && npm install && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.3"
   }
 }

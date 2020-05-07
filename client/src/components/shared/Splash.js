@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import clsx from 'clsx'
 import { Typography } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 import { motion } from 'framer-motion'

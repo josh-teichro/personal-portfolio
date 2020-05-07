@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import clsx from 'clsx'
 import { Splash, TextBox, Title, ContactInfo } from '../shared'
-import { Paper, Typography } from '@material-ui/core'
+import { Paper } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 
 const styles = theme => ({
