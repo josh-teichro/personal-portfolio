@@ -18,6 +18,9 @@ class Themes {
         main: this.lightgrey,
         contrastText: this.darkgrey,
       },
+      background: {
+        default: this.lightgrey,
+      }
     },
     // for overriding material ui elements (globally)
     //overrides: {

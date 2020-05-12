@@ -8,9 +8,8 @@ const styles = theme => ({
   root: {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
     padding: theme.spacing(1),
+		backgroundColor: theme.palette.background.default,
   },
   content: {
     display: 'flex',

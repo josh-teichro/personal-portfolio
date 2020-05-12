@@ -8,9 +8,8 @@ const styles = theme => ({
   root: {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
     padding: theme.spacing(2),
+		backgroundColor: theme.palette.background.default,
   },
   content: {
     display: 'flex',
@@ -32,7 +31,7 @@ const styles = theme => ({
   },
   contentTextBox: {
     flex: '10 1 auto',
-	    height: 208,
+	  height: 208,
 	},
 	contentLink: {
     '&:hover': {
