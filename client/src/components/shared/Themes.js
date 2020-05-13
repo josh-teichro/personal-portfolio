@@ -95,7 +95,7 @@ class Themes {
         lineHeight: 1.4,
       },
     },
-    spacing: [8, 12, 16, 20, 24],
+    spacing: [12, 16, 20, 24, 28],
   })
 
   static themeA = createMuiTheme({

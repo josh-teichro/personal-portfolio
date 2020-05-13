@@ -33,6 +33,9 @@ const styles = theme => ({
     flex: '10 1 auto',
 	  height: 208,
 	},
+  contentTextBoxVariantB: {
+    marginTop: theme.spacing(0)*2,
+	},
 	contentLink: {
     '&:hover': {
 			cursor: 'pointer',
@@ -104,7 +107,7 @@ class Home extends Component {
           />
           <Image src={require("../../images/laptop.jpg")} ignoreTop/>
           <TextBox
-            className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemFullWidth, classes.contentLink)}
+            className={clsx(classes.contentItem, classes.contentTextBox, classes.contentTextBoxVariantB, classes.contentItemFullWidth, classes.contentLink)}
             title="Projects"
             body="Joshua’s projects include a variety of team and solo projects. His most recent project was creating this website, however he has also partaken in projects related to graphics, game design, and computer vision. Joshua is passionate about each one of his projects, and will always put his best foot forward to ensure that whatever he is doing becomes a success..."
             theme='themeB'
@@ -120,7 +123,7 @@ class Home extends Component {
             variant='A'
             onClick={() => this.goToView("education")}
           />
-          <ContactInfo className={clsx(classes.contentItem, classes.contentTextBox)}/>
+          <ContactInfo className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth)}/>
         </div>
       </div>
     )

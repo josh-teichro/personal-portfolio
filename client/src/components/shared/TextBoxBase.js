@@ -6,6 +6,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles'
 const useStyles = makeStyles( theme => ({
   root: {
     textAlign: 'left',
+    border: '1px solid rgba(0,0,0,0)',
   },
   content: {
     margin: "12px 15px",
