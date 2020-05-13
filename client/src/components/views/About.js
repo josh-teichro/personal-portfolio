@@ -10,7 +10,6 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'center',
     padding: theme.spacing(1),
-		backgroundColor: theme.palette.background.default,
   },
   content: {
     display: 'flex',

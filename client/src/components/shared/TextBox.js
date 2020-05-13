@@ -21,7 +21,6 @@ const useStyles = makeStyles( (theme) => {
     //left: 0,
     minWidth: '100%',
     minHeight: '100%',
-    flex: 'auto',
     zIndex: 1,
   },
   // styles applied to the base TextBox element when `variant="none"`
@@ -201,7 +200,7 @@ TextBox.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   variant: PropTypes.oneOf(['A', 'B', 'C', 'D', 'none']),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   subtitle: PropTypes.string,
   body: PropTypes.node.isRequired,
   leftIcon: PropTypes.string,

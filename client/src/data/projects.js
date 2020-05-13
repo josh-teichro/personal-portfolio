@@ -9,8 +9,20 @@ export const projects = [
   },
   {
     type: "item",
+    title: "Open to Suggestions!",
+    subtitle: "",
+    body: "",
+    theme: 'main',
+    boxVariant: 'none',
+  },
+  {
+    type: "header",
+    title: "Past Projects",
+  },
+  {
+    type: "item",
     title: "Personal Website",
-    subtitle: "Apr. 2020",
+    subtitle: "Apr. 2020 - May 2020",
     body: (
       <div>
         <p>
@@ -26,10 +38,6 @@ export const projects = [
     ),
     theme: 'themeA',
     boxVariant: 'A',
-  },
-  {
-    type: "header",
-    title: "Past Projects",
   },
   {
     type: "item",

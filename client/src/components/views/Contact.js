@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import clsx from 'clsx'
-import { Title, ContactInfo } from '../shared'
+import { Title, TextBox, ContactInfo } from '../shared'
 import { Paper } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 
@@ -9,7 +9,6 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'center',
     padding: theme.spacing(1),
-		backgroundColor: theme.palette.background.default,
   },
   content: {
     display: 'flex',
@@ -26,13 +25,15 @@ const styles = theme => ({
   },
   contentRight: {
     display: 'flex',
+    flexDirection: 'row',
     justifyContent: 'flex-start',
-    alignItems: 'flex-start',
+    //alignItems: 'flex-start',
     flexWrap: 'wrap',
     width: '70%',
   },
   contentItem: {
     margin: theme.spacing(1),
+    width: '100%',
   },
   contentImage: {
     position: 'relative',
@@ -79,6 +80,12 @@ class Contact extends Component {
           </div>
           <div className={classes.contentRight}>
             <ContactInfo className={clsx(classes.contentItem, classes.contentTextBox)}/>
+            <TextBox
+              className={clsx(classes.contentItem, classes.contentTextBox)}
+              body=" * Please contact by email before calling to set up a time."
+              theme="main"
+              variant="none"
+            />
           </div>
         </div>
       </div>
