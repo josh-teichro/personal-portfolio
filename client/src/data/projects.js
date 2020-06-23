@@ -9,9 +9,9 @@ export const projects = [
   },
   {
     type: "item",
-    title: "Open to Suggestions!",
+    title: "Pending...",
     subtitle: "",
-    body: "",
+    body: "Open to teaming up with other developers looking to jump start their careers. Contact me if you have a project and are looking for another member, or if you're just looking to find the right project yourself!",
     theme: 'main',
     boxVariant: 'none',
   },

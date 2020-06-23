@@ -91,7 +91,7 @@ class Home extends Component {
           <TextBox
             className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth, classes.contentLink)}
             title="About"
-            body="Graduating computer science specialist at the University of Toronto, seeking a full-time time job in software development. Currently looking in the Toronto, Canada area, but open to opportunities elsewhere, including in the United States..."
+            body="This is Joshua's first year working full-time in the field of software development after graduating from the University of Toronto. Joshua is a focused computer scientist who loves what he does and is excited to continue to develop his knowledge and skills even now after completing his post-secondary education..."
             theme='themeA'
             variant='A'
             onClick={() => this.goToView("about")}
@@ -99,7 +99,7 @@ class Home extends Component {
           <TextBox
             className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth, classes.contentLink)}
             title="Experience"
-            body="Most recent employment was with Magna Electronics in Brampton, ON, where he worked as a software engineering intern, but quickly became a key piece in a patent producing project..."
+            body="Currently, Joshua is working as a Web Developer / Programmer with Vincent Design in Winnipeg. However, he is also experienced in computer vision, having worked a 16 month internship for Magna Electronics where he was a key piece in developing new software for use in self-driving vehicles..."
             theme='themeA'
             variant='A'
             onClick={() => this.goToView("experience")}
@@ -117,7 +117,7 @@ class Home extends Component {
           <TextBox
             className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth, classes.contentLink)}
             title="Education"
-            body="Joshua just completed his post-secondary education at the University of Toronto in ON, Canada. The University of Toronto is a globally top 25 ranked university and is the largest university in Canada..."
+            body="Joshua just completed his post-secondary education at the University of Toronto in ON, Canada, receiving an Honours Bachelor of Science with High Distinction, while specializing in Computer Science..."
             theme='themeA'
             variant='A'
             onClick={() => this.goToView("education")}

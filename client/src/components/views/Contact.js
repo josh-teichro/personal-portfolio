@@ -82,7 +82,7 @@ class Contact extends Component {
             <ContactInfo className={clsx(classes.contentItem, classes.contentTextBox)}/>
             <TextBox
               className={clsx(classes.contentItem, classes.contentTextBox)}
-              body=" * Please contact by email before calling to set up a time."
+              body=" * Please message or email before calling to set up a time."
               theme="main"
               variant="none"
             />

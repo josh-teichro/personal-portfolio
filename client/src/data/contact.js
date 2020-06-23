@@ -9,6 +9,10 @@ export const contact = {
     text: "(204) 312 7804",
     href: "tel:+1.204.312.7804",
   },
+  twitter: {
+    text: "@josh_teichro",
+    href: "https://twitter.com/josh_teichro",
+  },
   linkedin:  {
     text: "joshua-teichroeb-a73042106",
     href: "https://www.linkedin.com/in/joshua-teichroeb-a73042106/",

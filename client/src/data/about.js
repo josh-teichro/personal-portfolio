@@ -44,6 +44,7 @@ export const about = {
         'CSS',
         'Javascript',
         'Node.js',
+        'Wordpress',
         'React',
         'SQL',
       ],

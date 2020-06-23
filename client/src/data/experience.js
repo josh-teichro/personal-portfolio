@@ -4,6 +4,32 @@ import React from 'react'
 export const experience = [
   {
     type: "header",
+    title: "Current Position",
+  },
+  {
+    type: "item",
+    title: "Web Developer / Programmer - Vincent Design",
+    subtitle: "May. 2020 - Current | Winnipeg, MB",
+    body: (
+      <div>
+        <p>
+          Full stack developer position working for a small team of designers and developers in downtown Winnipeg. Work is heavily focused on front-end development in Wordpress but will also include backend development using Python and Django in the future.
+        </p>
+        <p style={{marginBottom: 2}}>
+          Responsibilities include:
+        </p>
+        <ul style={{marginTop: 2}}>
+          <li> Taking site designs from the design team and implementing them in Wordpress, while keeping them responsive, and easily editable for staff and clients </li>
+          <li> Improving and updating existing sites to use the latest wordpress features and fit client needs </li>
+          <li> Miscellaneous programming jobs to make work in the office easier and more efficient </li>
+         </ul>
+      </div>
+    ),
+    theme: 'themeD',
+    boxVariant: 'D',
+  },
+  {
+    type: "header",
     title: "Past Experiences",
   },
   {
