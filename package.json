@@ -10,7 +10,7 @@
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "start": "node server.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && yarn && yarn run build"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +20,9 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.3"
+  },
+  "engines" : { 
+    "npm" : ">=8.3.1",
+    "node" : ">=16.14.0"
   }
 }
