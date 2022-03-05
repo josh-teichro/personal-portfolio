@@ -9,12 +9,34 @@ export const projects = [
   },
   {
     type: "item",
-    title: "Pending...",
-    subtitle: "",
-    body: "Open to teaming up with other developers looking to jump start their careers. Contact me if you have a project and are looking for another member, or if you're just looking to find the right project yourself!",
-    theme: 'main',
-    boxVariant: 'none',
+    title: "C++ Game Engine",
+    subtitle: "Jun. 2021 - Current",
+    body: (
+      <div>
+        <p>
+          Currently in the process of building my own game engine from scratch!
+        </p>
+        <p>
+          The current version includes a simple material system with 2D texture rendering, an event system, a profiler, a 3D camera controller to move around the scene, ImGui for the UI, batch rendering using OpenGL, and uses a GLFW window.
+        </p>
+        <p>
+          See my progress at: <Link color='inherit' href="https://github.com/josh-teichro/game-engine" target="_blank" rel="noopener"> https://github.com/josh-teichro/game-engine </Link>
+        </p>
+      </div>
+    ),
+    icon: 'game-engine.gif',
+    theme: 'themeA',
+    boxVariant: 'A',
+    isIconToLeft: true,
   },
+  // {
+  //   type: "item",
+  //   title: "Pending...",
+  //   subtitle: "",
+  //   body: "Open to teaming up with other developers looking to jump start their careers. Contact me if you have a project and are looking for another member, or if you're just looking to find the right project yourself!",
+  //   theme: 'main',
+  //   boxVariant: 'none',
+  // },
   {
     type: "header",
     title: "Past Projects",
@@ -30,6 +52,9 @@ export const projects = [
         </p>
         <p>
           The website was built in React and is strongly influenced by the <Link color='inherit' href="https://material-ui.com/" target="_blank" rel="noopener"> Material UI </Link> library.
+        </p>
+        <p>
+          (Talk to me about what I'd do differently today!)
         </p>
         <p>
           link to repository: <Link color='inherit' href="https://github.com/josh-teichro/personal-portfolio" target="_blank" rel="noopener"> https://github.com/josh-teichro/personal-portfolio </Link>

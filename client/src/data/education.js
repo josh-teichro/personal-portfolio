@@ -7,7 +7,7 @@ const styles = {
     justifyContent: 'center',
     flexWrap: 'wrap',
     flexDirection: 'column',
-    height: 40,
+    height: 44,
   },
   gridItem: {
     flex: '1 0 auto',

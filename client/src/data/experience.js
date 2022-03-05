@@ -13,15 +13,15 @@ export const experience = [
     body: (
       <div>
         <p>
-          Full stack developer position working for a small team of designers and developers in downtown Winnipeg. Work is heavily focused on front-end development in Wordpress but will also include backend development using Python and Django in the future.
+          Full stack developer position working for a small, but growing, team of designers and developers in downtown Winnipeg. 
         </p>
         <p style={{marginBottom: 2}}>
           Responsibilities include:
         </p>
         <ul style={{marginTop: 2}}>
-          <li> Taking site designs from the design team and implementing them in Wordpress, while keeping them responsive, and easily editable for staff and clients </li>
-          <li> Improving and updating existing sites to use the latest wordpress features and fit client needs </li>
-          <li> Miscellaneous programming jobs to make work in the office easier and more efficient </li>
+          <li> Front-end development of Wordpress sites using modern technologies like Tailwind and Laravel </li>
+          <li> Mobile app development for both IOS and Android using react-native and expo </li>
+          <li> Building misc. apps in React to improve development workflow </li>
          </ul>
       </div>
     ),
@@ -29,8 +29,52 @@ export const experience = [
     boxVariant: 'D',
   },
   {
+    type: "item",
+    title: "Freelance Unity Developer - Propel VR",
+    subtitle: "Nov. 2021 - Current | Remote",
+    body: (
+      <div>
+        <p>
+          Also currently doing freelance work with Propel VR building small Unity projects varying from VR games to academic/training simulations.
+        </p>
+        <p style={{marginBottom: 2}}>
+          Responsibilities include:
+        </p>
+        <ul style={{marginTop: 2}}>
+          <li> Game design </li>
+          <li> Game mechanics </li>
+          <li> UI/UX </li>
+          <li> Working with external API's and integrating them with Unity </li>
+          <li> Misc. Unity and game dev related tasks </li>
+         </ul>
+      </div>
+    ),
+    theme: 'themeA',
+    boxVariant: 'A',
+  },
+  {
     type: "header",
     title: "Past Experiences",
+  },
+  {
+    type: "item",
+    title: "Freelance Unity Developer - Richard Beare",
+    subtitle: "Oct. 2021 | Remote",
+    body: (
+      <div>
+        <p>
+          Contracted to build an app prototype in Unity.
+        </p>
+        <p style={{marginBottom: 2}}>
+          Responsibilities include:
+        </p>
+        <ul style={{marginTop: 2}}>
+          <li> Building a responsive Unity app for mobile devices to match a given design </li>
+         </ul>
+      </div>
+    ),
+    theme: 'themeB',
+    boxVariant: 'B',
   },
   {
     type: "item",

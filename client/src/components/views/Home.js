@@ -15,7 +15,8 @@ const styles = theme => ({
     justifyContent: 'space-between',
     alignItems: 'flex-start',
     flexWrap: 'wrap',
-    width: 782,
+    width: '100%',
+    maxWidth: 782,
     margin: -theme.spacing(0),
   },
   contentItem: {
@@ -91,7 +92,7 @@ class Home extends Component {
           <TextBox
             className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth, classes.contentLink)}
             title="About"
-            body="This is Joshua's first year working full-time in the field of software development after graduating from the University of Toronto. Joshua is a focused computer scientist who loves what he does and is excited to continue to develop his knowledge and skills even now after completing his post-secondary education..."
+            body="This is Joshua's second year working full-time in the field of software development after graduating from the University of Toronto. Joshua is a focused computer scientist who loves what he does and is excited to continue to develop his knowledge and skills even now after completing his post-secondary education..."
             theme='themeA'
             variant='A'
             onClick={() => this.goToView("about")}
@@ -99,7 +100,7 @@ class Home extends Component {
           <TextBox
             className={clsx(classes.contentItem, classes.contentTextBox, classes.contentItemHalfWidth, classes.contentLink)}
             title="Experience"
-            body="Currently, Joshua is working as a Web Developer / Programmer with Vincent Design in Winnipeg. However, he is also experienced in computer vision, having worked a 16 month internship for Magna Electronics where he was a key piece in developing new software for use in self-driving vehicles..."
+            body="Currently, Joshua is working as a Web Developer / Programmer with Vincent Design in Winnipeg, while doing freelance game dev work on the side. However, he is also experienced in computer vision, having worked a 16 month internship for Magna Electronics where he was a key piece in developing new software for use in self-driving vehicles..."
             theme='themeA'
             variant='A'
             onClick={() => this.goToView("experience")}
@@ -108,7 +109,7 @@ class Home extends Component {
           <TextBox
             className={clsx(classes.contentItem, classes.contentTextBox, classes.contentTextBoxVariantB, classes.contentItemFullWidth, classes.contentLink)}
             title="Projects"
-            body="Joshua’s projects include a variety of team and solo projects. His most recent project was creating this website, however he has also partaken in projects related to graphics, game design, and computer vision. Joshua is passionate about each one of his projects, and will always put his best foot forward to ensure that whatever he is doing becomes a success..."
+            body="Joshua’s projects include a variety of team and solo projects. He is currently working on building a game engine from scratch, however he has also partaken in projects related to web and app development, graphics, game design, and computer vision. Joshua is passionate about each one of his projects, and will always put his best foot forward to ensure that whatever he is doing becomes a success..."
             theme='themeB'
             variant='B'
             onClick={() => this.goToView("projects")}

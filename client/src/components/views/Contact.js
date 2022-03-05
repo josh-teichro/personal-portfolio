@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import clsx from 'clsx'
-import { Title, TextBox, ContactInfo } from '../shared'
+import { Title, ContactInfo } from '../shared'
 import { Paper } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 
@@ -80,12 +80,12 @@ class Contact extends Component {
           </div>
           <div className={classes.contentRight}>
             <ContactInfo className={clsx(classes.contentItem, classes.contentTextBox)}/>
-            <TextBox
+            {/* <TextBox
               className={clsx(classes.contentItem, classes.contentTextBox)}
               body=" * Please message or email before calling to set up a time."
               theme="main"
               variant="none"
-            />
+            /> */}
           </div>
         </div>
       </div>

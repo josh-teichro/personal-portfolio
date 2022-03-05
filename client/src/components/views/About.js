@@ -15,7 +15,8 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'space-between',
     flexWrap: 'wrap',
-    width: 1024, //932, //1177,
+    width: '100%',
+    maxWidth: 1024, //932, //1177,
   },
   contentLeft: {
     display: 'flex',

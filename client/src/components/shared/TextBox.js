@@ -22,6 +22,7 @@ const useStyles = makeStyles( (theme) => {
     minWidth: '100%',
     minHeight: '100%',
     zIndex: 1,
+    transition: 'background-color 100ms'
   },
   // styles applied to the base TextBox element when `variant="none"`
   variantNone: {

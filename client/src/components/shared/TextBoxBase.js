@@ -12,7 +12,8 @@ const useStyles = makeStyles( theme => ({
     margin: "12px 15px",
   },
   contentBody: {
-    margin: '4px 0px',
+    margin: '6px 0px',
+    lineHeight: 1.5,
     '& p': {
       margin: '16px 0px',
     },

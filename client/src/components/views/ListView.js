@@ -9,7 +9,8 @@ const styles = (theme) => ({
     display: 'flex',
     justifyContent: 'center',
     flexWrap: 'wrap',
-    width: 932,//1177,
+    width: '100%',
+    maxWidth: 932,//1177,
   },
   contentItem: {
     margin: theme.spacing(1),
