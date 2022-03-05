@@ -1,4 +1,4 @@
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core/styles';
 
 class Themes {
 
@@ -8,7 +8,7 @@ class Themes {
   static lightgrey = '#F0EFF4';
   static darkgrey = '#584B53';
 
-  static main = createMuiTheme({
+  static main = createTheme({
     palette: {
       primary: {
         main: this.darkgrey,
@@ -95,7 +95,7 @@ class Themes {
     spacing: [12, 16, 20, 24, 28],
   })
 
-  static themeA = createMuiTheme({
+  static themeA = createTheme({
     ...this.main,
     palette: {
       primary: {
@@ -108,7 +108,7 @@ class Themes {
     },
   })
 
-  static themeB = createMuiTheme({
+  static themeB = createTheme({
     ...this.main,
     palette: {
       primary: {
@@ -121,7 +121,7 @@ class Themes {
     },
   })
 
-  static themeC = createMuiTheme({
+  static themeC = createTheme({
     ...this.main,
     palette: {
       primary: {

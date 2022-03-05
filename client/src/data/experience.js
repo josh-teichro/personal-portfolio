@@ -25,7 +25,7 @@ export const experience = [
          </ul>
       </div>
     ),
-    theme: 'themeD',
+    theme: 'main',
     boxVariant: 'D',
   },
   {

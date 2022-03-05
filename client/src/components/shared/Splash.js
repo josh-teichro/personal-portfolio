@@ -26,7 +26,6 @@ class Splash extends Component {
 	onClick = () => {
 		this.setState({visible: false})
 		setTimeout(() => {
-			console.log('yo')
 			this.setState({isNone: true})
 		}, 500)
 	}
