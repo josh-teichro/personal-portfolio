@@ -1,4 +1,4 @@
 # personal-portfolio
-Repository for my personal website.
+Repository for my former personal website (no longer hosted). 
 
-Deployed at [josh-teichro.herokuapp.com](https://josh-teichro.herokuapp.com).
+Stay tuned for when I update this in the future!
